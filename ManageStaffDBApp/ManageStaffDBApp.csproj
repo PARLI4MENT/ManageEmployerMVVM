@@ -8,4 +8,16 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Compile Update="View\EditUserWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\EditPositionWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\EditDepartmentWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+
 </Project>
