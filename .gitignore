@@ -361,3 +361,6 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+/ManageStaffDBApp/Migrations/ApplicationContextModelSnapshot.cs
+/ManageStaffDBApp/Migrations/20240530004750_Init.cs
+/ManageStaffDBApp/Migrations
