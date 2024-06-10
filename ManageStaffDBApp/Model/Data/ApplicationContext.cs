@@ -17,7 +17,7 @@ namespace ManageStaffDBApp.Model.Data
         }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlite("Data Source=C:\\helloapp.db");
+            optionsBuilder.UseSqlite("Data Source=C:\\helloapp.db;");
         }
     }
 }
