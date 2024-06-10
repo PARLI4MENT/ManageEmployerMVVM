@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.Data.Sqlite;
+using Microsoft.EntityFrameworkCore;
 
 namespace ManageStaffDBApp.Model.Data
 {
@@ -8,13 +9,15 @@ namespace ManageStaffDBApp.Model.Data
         public DbSet<Position> Positions { get; set; }
         public DbSet<Department> Departments { get; set; }
 
+
+
         public ApplicationContext()
         {
             Database.EnsureCreated();
         }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Server=(localdb)\\mssqllocaldb;Database=ManageStaffAppDB;Trusted_Connection=True;");
+            optionsBuilder.UseSqlite("Data Source=C:\\helloapp.db");
         }
     }
 }
